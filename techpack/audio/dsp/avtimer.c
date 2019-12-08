@@ -326,12 +326,12 @@ static void avcs_set_isp_fptr(bool enable)
 		av_fptr.fptr_avtimer_open = avcs_core_open;
 		av_fptr.fptr_avtimer_enable = avcs_core_disable_power_collapse;
 		av_fptr.fptr_avtimer_get_time = avcs_core_query_timer;
-		msm_isp_set_avtimer_fptr(av_fptr);
+		//msm_isp_set_avtimer_fptr(av_fptr);
 	} else {
 		av_fptr.fptr_avtimer_open = NULL;
 		av_fptr.fptr_avtimer_enable = NULL;
 		av_fptr.fptr_avtimer_get_time = NULL;
-		msm_isp_set_avtimer_fptr(av_fptr);
+		//msm_isp_set_avtimer_fptr(av_fptr);
 	}
 }
 #else
