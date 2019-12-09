@@ -285,16 +285,16 @@ static inline int sde_rsc_client_state_update(struct sde_rsc_client *client,
 	return 0;
 }
 
-int sde_rsc_client_get_vsync_refcount(
-		struct sde_rsc_client *caller_client)
+/*int sde_rsc_client_get_vsync_refcount(
+    struct sde_rsc_client *caller_client)
 {
-	return 0;
-}
+  return 0;
+}*/
 
 int sde_rsc_client_reset_vsync_refcount(
-		struct sde_rsc_client *caller_client)
+    struct sde_rsc_client *caller_client)
 {
-	return 0;
+  return 0;
 }
 
 static inline bool sde_rsc_client_is_state_update_complete(
