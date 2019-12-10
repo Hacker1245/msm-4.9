@@ -3744,7 +3744,7 @@ static void mdss_fb_update_resolution(struct msm_fb_data_type *mfd,
 	}
 	var->xres_virtual = var->xres;
 	var->yres_virtual = pinfo->yres * mfd->fb_page;
-	mdss_panelinfo_to_fb_var(pinfo, var);
+	mdss_panelinfo_to_fb_var(mfd);
 }
 
 int mdss_fb_atomic_commit(struct fb_info *info,
