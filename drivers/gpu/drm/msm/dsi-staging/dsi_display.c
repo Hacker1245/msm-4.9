@@ -6912,5 +6912,5 @@ module_param_string(dsi_display1, dsi_display_secondary, MAX_CMDLINE_PARAM_LEN,
 								0600);
 MODULE_PARM_DESC(dsi_display1,
 	"msm_drm.dsi_display1=<display node>:<configX> where <display node> is 'secondary dsi display node name' and <configX> where x represents index in the topology list");
-module_init(dsi_display_register);
-module_exit(dsi_display_unregister);
+//module_init(dsi_display_register);
+//module_exit(dsi_display_unregister);
