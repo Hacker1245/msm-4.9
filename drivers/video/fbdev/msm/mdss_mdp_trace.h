@@ -428,7 +428,7 @@ TRACE_EVENT(mdp_cmd_wait_pingpong,
 			__entry->kickoff_cnt)
 );
 
-TRACE_EVENT(tracing_mark_write,
+/*TRACE_EVENT(tracing_mark_write,
 	TP_PROTO(int pid, const char *name, bool trace_begin),
 	TP_ARGS(pid, name, trace_begin),
 	TP_STRUCT__entry(
@@ -443,7 +443,7 @@ TRACE_EVENT(tracing_mark_write,
 	),
 	TP_printk("%s|%d|%s", __entry->trace_begin ? "B" : "E",
 		__entry->pid, __get_str(trace_name))
-);
+);*/
 
 TRACE_EVENT(mdp_trace_counter,
 	TP_PROTO(int pid, char *name, int value),
