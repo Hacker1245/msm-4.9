@@ -319,8 +319,8 @@ TRACE_EVENT(sde_perf_calc_crtc,
 			__entry->core_clk_rate)
 );
 
-#define SDE_ATRACE_END(name) trace_tracing_mark_write(current->tgid, name, 0)
-#define SDE_ATRACE_BEGIN(name) trace_tracing_mark_write(current->tgid, name, 1)
+//#define SDE_ATRACE_END(name) trace_tracing_mark_write(current->tgid, name, 0)
+//#define SDE_ATRACE_BEGIN(name) trace_tracing_mark_write(current->tgid, name, 1)
 #define SDE_ATRACE_FUNC() SDE_ATRACE_BEGIN(__func__)
 
 #define SDE_ATRACE_INT(name, value) \
