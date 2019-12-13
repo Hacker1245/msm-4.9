@@ -830,5 +830,5 @@ static void __exit sde_wb_unregister(void)
 	platform_driver_unregister(&sde_wb_driver);
 }
 
-module_init(sde_wb_register);
-module_exit(sde_wb_unregister);
+//module_init(sde_wb_register);
+//module_exit(sde_wb_unregister);
