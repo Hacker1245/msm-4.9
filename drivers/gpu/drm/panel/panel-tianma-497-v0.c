@@ -160,11 +160,11 @@ static int tianma_497_v0_enable(struct drm_panel *panel)
 	if (ctx->enabled)
 		return 0;
 
-	ret = backlight_enable(ctx->backlight);
+	/*ret = backlight_enable(ctx->backlight);
 	if (ret < 0) {
 		dev_err(&ctx->dsi->dev, "Failed to enable backlight: %d\n", ret);
 		return ret;
-	}
+	}*/
 
 	ctx->enabled = true;
 	return 0;
@@ -178,11 +178,11 @@ static int tianma_497_v0_disable(struct drm_panel *panel)
 	if (!ctx->enabled)
 		return 0;
 
-	ret = backlight_disable(ctx->backlight);
+	/*ret = backlight_disable(ctx->backlight);
 	if (ret < 0) {
 		dev_err(&ctx->dsi->dev, "Failed to disable backlight: %d\n", ret);
 		return ret;
-	}
+	}*/
 
 	ctx->enabled = false;
 	return 0;
@@ -246,12 +246,12 @@ static int tianma_497_v0_probe(struct mipi_dsi_device *dsi)
 		return ret;
 	}
 
-	ctx->backlight = devm_of_find_backlight(dev);
+	/*ctx->backlight = devm_of_find_backlight(dev);
 	if (IS_ERR(ctx->backlight)) {
 		ret = PTR_ERR(ctx->backlight);
 		dev_err(dev, "Failed to get backlight: %d\n", ret);
 		return ret;
-	}
+	}*/
 
 	ctx->dsi = dsi;
 	mipi_dsi_set_drvdata(dsi, ctx);
