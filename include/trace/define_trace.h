@@ -85,7 +85,7 @@
 /* Let the trace headers be reread */
 #define TRACE_HEADER_MULTI_READ
 
-#include TRACE_INCLUDE(TRACE_INCLUDE_FILE)
+#include ../../drivers/platform/msm/ipa/ipa_clients/rndis_ipa_trace.h
 
 /* Make all open coded DECLARE_TRACE nops */
 #undef DECLARE_TRACE
